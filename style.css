@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue: hsl(215, 51%, 70%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+}
+
+.card {
+    width: 450px;
+    background-color: var(--card-bg);
+    color: var(--soft-blue);
+    padding: 25px;
+    border-radius: 2%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.card h2 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.card h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.nft-card-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 15px 0;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+}
+
+.time,
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.time img,
+.price img {
+    margin-right: 5px;
+}
+
+.price:first-child {
+    color: var(--cyan);
+}
+
+.image-overlay {
+    background-color: var(--cyan);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.8s;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.creator img {
+    width: 50px;
+    margin-right: 20px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+}
+
+.creator-name {
+    color: var(--white);
+}
+
+.creator-name:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
